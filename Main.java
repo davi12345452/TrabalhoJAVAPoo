@@ -1,7 +1,10 @@
 import java.util.Scanner;
 
 public class Main {
-
+  
+  /**
+   * Método principal que executa o programa.
+   */
   public static void main(String[] args) {
     Cofrinho cofrinho = new Cofrinho();
 
@@ -40,6 +43,13 @@ public class Main {
     } while (opcao != 5);
   }
 
+  /**
+   * Exibe o menu para adicionar uma moeda e lê a escolha do usuário.
+   * Em seguida, adiciona a moeda ao cofrinho.
+   *
+   * @param cofrinho o cofrinho onde a moeda será adicionada
+   * @param scanner  o objeto Scanner usado para leitura de entrada
+   */
   private static void adicionarMoedaMenu(Cofrinho cofrinho, Scanner scanner) {
     System.out.println("Tipos de moedas:");
     System.out.println("1 - Real");
@@ -65,6 +75,13 @@ public class Main {
     }
   }
 
+  /**
+   * Exibe o menu para remover uma moeda e lê a escolha do usuário.
+   * Em seguida, remove a moeda do cofrinho com base no índice informado.
+   *
+   * @param cofrinho o cofrinho de onde a moeda será removida
+   * @param scanner  o objeto Scanner usado para leitura de entrada
+   */
   private static void removerMoedaMenu(Cofrinho cofrinho, Scanner scanner) {
     cofrinho.listarMoedas();
     System.out.print("Informe o indice da moeda a ser removida: ");
